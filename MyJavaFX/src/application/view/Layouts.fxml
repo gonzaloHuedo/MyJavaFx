@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="300.0" minWidth="500.0" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.OneController">
+   <children>
+      <BorderPane style="-fx-background-color: green;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane prefHeight="572.0" prefWidth="640.0" style="-fx-background-color: green;" stylesheets="@../application.css" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="338.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="135.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="372.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="372.0" minHeight="10.0" prefHeight="275.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="75.0" prefWidth="338.0" text="The lost forest" textFill="#14e849" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXButton onAction="#handleSend" prefHeight="137.0" prefWidth="183.0" text="Go over river" textFill="#2289b2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onAction="#handleClose" prefHeight="118.0" prefWidth="219.0" text="Hidden path" textFill="#14cc29" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="191.0" fitWidth="339.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@images/bosque.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

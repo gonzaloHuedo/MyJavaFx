@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onDragDetected="#showSendProfile" prefHeight="464.0" prefWidth="500.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.OneController">
+   <children>
+      <ImageView fitHeight="367.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bosque.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="282.0" prefHeight="183.0" prefWidth="493.0" text="Welcome to the best place in the world!" textFill="#4a210e">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
